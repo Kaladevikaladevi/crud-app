@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://crud-app-3-tchf.onrender.com",
+  baseURL: "http://localhost:5000/api/tasks",
 });
 
 export default API;
