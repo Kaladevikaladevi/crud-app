@@ -73,24 +73,24 @@ export default function Home() {
     <ul>
       {tasks.map((task) => (
         <li key={task._id}>
-          {task.title}
+  <span>{task.title}</span>
 
-          <div className="actions">
-            <button
-              className="edit"
-              onClick={() => startEdit(task)}
-            >
-              Edit
-            </button>
+  <div className="actions">
+    <button
+      className="edit"
+      onClick={() => startEdit(task)}
+    >
+      ✏️ Edit
+    </button>
 
-            <button
-              className="delete"
-              onClick={() => deleteTask(task._id)}
-            >
-              Delete
-            </button>
-          </div>
-        </li>
+    <button
+      className="delete"
+      onClick={() => deleteTask(task._id)}
+    >
+      🗑 Delete
+    </button>
+  </div>
+</li>
       ))}
     </ul>
   </div>
